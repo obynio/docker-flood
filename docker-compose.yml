@@ -27,6 +27,7 @@ services:
     environment:
       - RTORRENT_SOCK=true
       - NODE_ENV=development
+      - FLOOD_SECRET=flood
     volumes:
       - ./downloads:/data/downloads
       - sock:/data
