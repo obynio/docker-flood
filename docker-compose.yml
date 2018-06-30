@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: rtorrent.dockerfile
+    restart: always
     volumes:
       - ./downloads:/data/downloads
       - sock:/data
@@ -28,6 +29,7 @@ services:
       - RTORRENT_SOCK=true
       - NODE_ENV=development
       - FLOOD_SECRET=flood
+    restart: always
     volumes:
       - ./downloads:/data/downloads
       - sock:/data
