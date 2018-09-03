@@ -1,0 +1,13 @@
+pipeline:
+  rtorrent:
+    image: plugins/docker
+    repo: obynio/rtorrent
+    tags: latest
+    dockerfile: rtorrent.dockerfile
+    secrets: [ docker_username, docker_password ]
+  flood:
+    image: plugins/docker
+    repo: obynio/flood
+    tags: latest
+    dockerfile: flood.dockerfile
+    secrets: [ docker_username, docker_password ]
