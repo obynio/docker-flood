@@ -17,3 +17,4 @@ Yes it can but with `docker-compose.yml` files you can easily launch a complex i
 > Why concatenating all your commands in a single RUN directive ?
 
 Every `RUN` directive creates another layer in your container which makes your container much larger than it needs to be. Meaning if you do any package or archive cleanup after you've installed a bunch of things you're not actually saving any space.
+
