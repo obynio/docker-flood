@@ -1,7 +1,5 @@
 # docker-flood
 
-[![DroneCI](https://drone.obyn.io/api/badges/obynio/docker-flood/status.svg)](https://drone.obyn.io/obynio/docker-flood)
-
 > The perfect match between a highly customizable torrent client and an awesome web ui.
 
 This repo holds my dockerfiles used to create a flood web ui instance using rtorrent as backend. It was created to be easily deployed using a single `docker-compose`. These dockerfiles are based on [Alpine Linux](https://alpinelinux.org) for minimalist and lightweight images.
